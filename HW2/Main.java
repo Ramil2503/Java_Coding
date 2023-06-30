@@ -21,7 +21,7 @@ public class Main {
         String jsonString = readInFile(inputfilePath);
         List<Student> students = parseStudents(jsonString);
         printListOfStudents(students);
-        writeToFile(outputListOfStudents(students), outputfilePath);
+        writeToFile(outputListOfStudents(students).toString(), outputfilePath);
         closeLogger();
     }
 
@@ -88,11 +88,11 @@ public class Main {
         }
     }
 
-    static String outputListOfStudents(List<Student> students) {
-        String result = "";
+    static StringBuilder outputListOfStudents(List<Student> students) {
+        StringBuilder result = new StringBuilder();
         for (int i = 0; i < students.size(); i++) {
             Student student = students.get(i);
-            result = result + ("Student " + student.getSurname() + " got " + student.getGrade() + " from " + student.getSubject() + ".\n");
+            result = result.append("Student " + student.getSurname() + " got " + student.getGrade() + " from " + student.getSubject() + ".\n");
         }
         return result;
     }
