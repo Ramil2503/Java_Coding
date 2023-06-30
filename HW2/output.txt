@@ -1,0 +1,17 @@
+yeap
+nullStudent Johnson got 5 from Math.
+Student Garcia got 4 from Informatics.
+Student Alexander got 5 from Physics.
+
+nullStudent Johnson got 5 from Math.
+Student Garcia got 4 from Informatics.
+Student Alexander got 5 from Physics.
+
+Student Johnson got 5 from Math.
+Student Garcia got 4 from Informatics.
+Student Alexander got 5 from Physics.
+
+Student Johnson got 5 from Math.
+Student Garcia got 4 from Informatics.
+Student Alexander got 5 from Physics.
+

@@ -1,0 +1,12 @@
+Jun 30, 2023 5:13:23 PM HW2.Main writeToFile
+INFO: The write operation was successful.
+Jun 30, 2023 5:16:26 PM HW2.Main writeToFile
+INFO: The write operation was successful.
+Jun 30, 2023 5:17:47 PM HW2.Main writeToFile
+INFO: The write operation was successful.
+Jun 30, 2023 5:17:55 PM HW2.Main writeToFile
+INFO: The write operation was successful.
+Jun 30, 2023 5:18:10 PM HW2.Main writeToFile
+INFO: The write operation was successful.
+Jun 30, 2023 5:19:46 PM HW2.Main writeToFile
+INFO: The write operation was successful.
