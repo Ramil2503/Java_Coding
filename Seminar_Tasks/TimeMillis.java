@@ -3,7 +3,7 @@ package Seminar_Tasks;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class TimeMillis {
+public class timeMillis {
     public static void main(String[] args) {
         ArrayList<Integer> list1 = new ArrayList<>();
         LinkedList<Integer> list2 = new LinkedList<>();

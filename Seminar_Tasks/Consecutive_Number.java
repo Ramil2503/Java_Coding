@@ -6,7 +6,7 @@ package Seminar_Tasks;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Consecutive_Number {
+public class consecutive_Number {
     public static void main(String[] args) {
         int[] arr = random(10, 0, 2);
         System.out.println(Arrays.toString(arr));

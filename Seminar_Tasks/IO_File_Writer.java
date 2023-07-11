@@ -9,7 +9,7 @@ import java.util.logging.Handler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
-public class IO_File_Writer {
+public class io_File_Writer {
     /*
     Write a method that makes up a 100-word repeating compound 
     TEST and the method that wrote this article to a plain text file, 

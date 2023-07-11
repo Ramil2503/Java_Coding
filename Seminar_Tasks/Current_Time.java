@@ -2,7 +2,7 @@ package Seminar_Tasks;
 import java.time.LocalTime;
 import java.util.Scanner;
 
-public class Current_Time {
+public class current_Time {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         LocalTime time = LocalTime.now();
