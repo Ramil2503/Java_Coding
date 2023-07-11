@@ -1,0 +1,11 @@
+package HW4.Task1;
+
+public class LinkedListNode {
+    int value;
+    LinkedListNode next;
+
+    public LinkedListNode(int value) {
+        this.value = value;
+        this.next = null;
+    }
+}
