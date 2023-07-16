@@ -15,10 +15,10 @@ public class Main {
 
     private static Set<Notebook> createNotebooks() {
         Set<Notebook> notebooks = new HashSet<>();
-        notebooks.add(new Notebook("Brand 1", 8, 512, "OS 1", "Black"));
-        notebooks.add(new Notebook("Brand 2", 16, 1024, "OS 2", "Silver"));
-        notebooks.add(new Notebook("Brand 3", 8, 256, "OS 1", "White"));
-        notebooks.add(new Notebook("Brand 4", 16, 512, "OS 2", "Black"));
+        notebooks.add(new Notebook("Brand 1", 8, 512, "MacOs", "Black"));
+        notebooks.add(new Notebook("Brand 2", 16, 1024, "Linux", "Silver"));
+        notebooks.add(new Notebook("Brand 3", 8, 256, "Windows", "White"));
+        notebooks.add(new Notebook("Brand 4", 16, 512, "Windows", "Black"));
         return notebooks;
     }
 
@@ -38,12 +38,12 @@ public class Main {
         while (criteriaNumber >= 1 && criteriaNumber <= 4) {
             switch (criteriaNumber) {
                 case 1:
-                    System.out.print("Enter the minimum RAM size: ");
+                    System.out.print("Enter the minimum RAM size (in gb): ");
                     int minRAM = scanner.nextInt();
                     filterCriteria.put(1, minRAM);
                     break;
                 case 2:
-                    System.out.print("Enter the minimum storage capacity: ");
+                    System.out.print("Enter the minimum storage capacity (in gb): ");
                     int minStorageCapacity = scanner.nextInt();
                     filterCriteria.put(2, minStorageCapacity);
                     break;
@@ -81,7 +81,7 @@ public class Main {
                     filteredNotebooks.removeIf(notebook -> notebook.getStorageCapacity() < (int) criteriaValue);
                     break;
                 case 3:
-                    filteredNotebooks.removeIf(notebook -> !notebook.getOperatingSystem().equals(criteriaValue));
+                    filteredNotebooks.removeIf(notebook -> !notebook.getOperatingSystem().equalsIgnoreCase((String) criteriaValue));
                     break;
                 case 4:
                     filteredNotebooks.removeIf(notebook -> !notebook.getColor().equalsIgnoreCase((String) criteriaValue));
